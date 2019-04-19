@@ -1,3 +1,9 @@
-const run = () =>{
-  console.log("imrunning");
-}
+import Highway from '@dogstudio/highway';
+import Fade from './transition';
+
+
+const H = new Highway.Core({
+  transitions: {
+    default: Fade
+  }
+});
